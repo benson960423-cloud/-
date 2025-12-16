@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>角色提問遊戲 - 分離版</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        html, body { height: 100%; }
+        body { 
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: #669bbc; /* 設定背景色 */
+            font-family: "Microsoft JhengHei", sans-serif;
+        }
+        canvas { display: block; }
+        
+        /* 優化 P5 創建的 DOM 元素的基本樣式 */
+        input, button { 
+            padding: 8px 12px; 
+            margin: 5px; 
+            border-radius: 5px; 
+            border: 1px solid #ccc; 
+            font-size: 16px;
+            cursor: pointer;
+            box-sizing: border-box; /* 確保 padding 不會撐破寬度 */
+        }
+        button:hover { background-color: #f0f0f0; }
+        button:active { background-color: #ddd; }
+        input:focus { outline: 2px solid #669bbc; border-color: transparent; }
+    </style>
+</head>
+<body>
+    <script src="sketch.js"></script>
+</body>
+</html>
